@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./App.js"></script>
+</head>
+<body>
+</head>
+<body>
+    <a href="index.html">
+        <button id="back">Back</button></a>
+    <h1 style="
+        justify-content: center;
+        display: flex;">Checkout Page </h1> 
+
+<section id="summary">
+    <h2>Summary</h2>
+    <h3>Movie Name: <span id="movieName"></span></h3>
+    <p>Classic Ticket:₹<span id="ticketPrice"></span></p>
+    <label for="ticketQuantity">Number of Tickets:</label>
+    <input type="number" id="ticketQuantity" name="ticketQuantity" min="1" value="1">
+    <p>Convenience Fee (1.75%) :₹<span id="discount"></span></p>
+    <p>Subtotal:₹<span id="subtotal"></span></p>
+</section>
+
+<!-- Payment Section -->
+<section id="payment">
+    <h2>Payment</h2>
+    <form id="paymentForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+        <label for="creditCard">Credit Card</label>
+
+        <input type="radio" id="debitCard" name="paymentMethod" value="debitCard">
+        <label for="debitCard">Debit Card</label>
+
+        <div class="card-details" id="creditCardDetails">
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName" name="cardName">
+
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="number" id="cardNumber" name="cardNumber">
+
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration">
+
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" name="cvv">
+        </div>
+
+        <div class="card-details" id="debitCardDetails">
+            <label for="debitCardName">Name on Debit Card:</label>
+            <input type="text" id="debitCardName" name="debitCardName">
+
+            <label for="debitCardNumber">Debit Card Number:</label>
+            <input type="number" id="debitCardNumber" name="debitCardNumber">
+
+            <label for="debitExpiration">Expiration Date:</label>
+            <input type="text" id="debitExpiration" name="debitExpiration">
+
+            <label for="debitCvv">CVV:</label>
+            <input type="number" id="debitCvv" name="debitCvv">
+        </div>
+
+        <button type="submit" id="paymentButton">Proceed to Pay</button>
+    
+    </form>
+</section>
+  
+     
+</body>
+</html>
