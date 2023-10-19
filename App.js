@@ -92,7 +92,7 @@ const genres = [
   
 
 
-if (window.location.pathname.includes("index.html")) {
+// if (window.location.pathname.includes("index.html")) {
 var selectedGenre=[];
 setGenre();
   function setGenre(){
@@ -261,7 +261,7 @@ searchButton.addEventListener('click', () => {
     }
 });
 
-}
+
         
   // Retrieve movie name and price from local storage
   const movieName = localStorage.getItem('selectedMovieName');
